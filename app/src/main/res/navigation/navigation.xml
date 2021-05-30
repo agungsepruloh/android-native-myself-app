@@ -20,4 +20,10 @@
         android:name="com.example.myselfapp.screens.home.HomeFragment"
         android:label="Home"
         tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/dailyActivityFragment"
+        android:name="com.example.myselfapp.DailyActivityFragment"
+        android:label="Daily Activity"
+        tools:layout="@layout/daily_activity_fragment" />
 </navigation>
