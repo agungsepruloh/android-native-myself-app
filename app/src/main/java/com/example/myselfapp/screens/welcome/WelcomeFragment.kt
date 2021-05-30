@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.myselfapp.R
 import com.example.myselfapp.databinding.WelcomeFragmentBinding
@@ -18,7 +19,7 @@ import me.relex.circleindicator.CircleIndicator3
 
 class WelcomeFragment : Fragment() {
     private lateinit var viewModel: WelcomeViewModel
-    lateinit var viewPager: ViewPager2
+    private lateinit var viewPager: ViewPager2
     lateinit var indicator: CircleIndicator3
     lateinit var walkThroughAdapter: WalkThroughAdapter
 
@@ -29,8 +30,22 @@ class WelcomeFragment : Fragment() {
         hideActionBar()
         val binding = DataBindingUtil.inflate<WelcomeFragmentBinding>(inflater,
             R.layout.welcome_fragment, container, false)
-        viewModel = ViewModelProvider(this).get(WelcomeViewModel::class.java)
 
+        viewModel = ViewModelProvider(this).get(WelcomeViewModel::class.java)
+        binding.viewModel = viewModel
+        setupViewPager(binding)
+
+        viewModel.eventDoneWalkThrough.observe(viewLifecycleOwner, { isDone ->
+            if (isDone) {
+                findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToHomeFragment())
+                viewModel.onDoneWalkThroughComplete()
+            }
+        })
+
+        return binding.root
+    }
+
+    private fun setupViewPager(binding: WelcomeFragmentBinding) {
         viewPager = binding.viewPager
         indicator = binding.indicator
         walkThroughAdapter = WalkThroughAdapter(this)
@@ -38,8 +53,6 @@ class WelcomeFragment : Fragment() {
         viewPager.adapter = walkThroughAdapter
         indicator.setViewPager(viewPager)
         walkThroughAdapter.registerAdapterDataObserver(indicator.adapterDataObserver)
-
-        return binding.root
     }
 
     private fun hideActionBar() {
