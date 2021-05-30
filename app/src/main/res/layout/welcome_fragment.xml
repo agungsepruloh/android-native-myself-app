@@ -28,13 +28,13 @@
         <me.relex.circleindicator.CircleIndicator3
             android:id="@+id/indicator"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="@dimen/space_large"
             android:layout_gravity="center"
             app:ci_animator="@transition/alpha"
             app:ci_drawable="@drawable/blue_dot_indicator"
             app:ci_drawable_unselected="@drawable/grey_dot_indicator"
-            app:ci_height="8dp"
-            app:ci_width="8dp"
+            app:ci_height="@dimen/space_small"
+            app:ci_width="@dimen/space_small"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -42,8 +42,8 @@
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="24dp"
+            android:layout_height="@dimen/space_extra_huge"
+            android:layout_margin="@dimen/space_large"
             android:text="@string/done"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
