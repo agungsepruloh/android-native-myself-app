@@ -7,4 +7,9 @@
     <string name="floating">Floating</string>
     <string name="skip">Skip</string>
     <string name="done">Done</string>
+    <string name="web_developer">Web \nDeveloper</string>
+    <string name="agung">Agung</string>
+    <string name="sepruloh">\tSepruloh</string>
+    <string name="home">Home</string>
+    <string name="daily_activity">Daily Activity</string>
 </resources>
