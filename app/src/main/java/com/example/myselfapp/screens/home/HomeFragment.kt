@@ -1,12 +1,11 @@
 package com.example.myselfapp.screens.home
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.myselfapp.R
 import com.example.myselfapp.databinding.HomeFragmentBinding
 
@@ -20,7 +19,13 @@ class HomeFragment : Fragment() {
         val binding = DataBindingUtil.inflate<HomeFragmentBinding>(inflater,
             R.layout.home_fragment, container, false)
         viewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
+        setActionBar()
 
         return binding.root
+    }
+
+    private fun setActionBar() {
+        val supportActionBar = (requireActivity() as AppCompatActivity).supportActionBar
+        supportActionBar?.show()
     }
 }
