@@ -15,4 +15,8 @@
     <string name="learning">Learning</string>
     <string name="gallery">Gallery</string>
     <string name="music_and_video">Music and Video</string>
+    <string name="music">Music</string>
+    <string name="title">Title</string>
+    <string name="singer">Singer</string>
+    <string name="artist">Artist</string>
 </resources>
