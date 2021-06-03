@@ -26,4 +26,10 @@
         android:name="com.example.myselfapp.screens.dailyactivity.DailyActivityFragment"
         android:label="Daily Activity"
         tools:layout="@layout/daily_activity_fragment" />
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.myselfapp.screens.gallery.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/gallery_fragment"/>
 </navigation>
