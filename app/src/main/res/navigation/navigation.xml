@@ -32,4 +32,10 @@
         android:name="com.example.myselfapp.screens.gallery.GalleryFragment"
         android:label="Gallery"
         tools:layout="@layout/gallery_fragment"/>
+
+    <fragment
+        android:id="@+id/musicVideoFragment"
+        android:name="com.example.myselfapp.screens.musicvideo.MusicVideoFragment"
+        android:label="Music and Video"
+        tools:layout="@layout/music_video_fragment"/>
 </navigation>

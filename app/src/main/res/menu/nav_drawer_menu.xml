@@ -14,4 +14,8 @@
         android:id="@+id/galleryFragment"
         android:title="@string/gallery" />
 
+    <item
+        android:id="@+id/musicVideoFragment"
+        android:title="@string/music_and_video" />
+
 </menu>
