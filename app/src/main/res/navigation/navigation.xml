@@ -38,4 +38,11 @@
         android:name="com.example.myselfapp.screens.musicvideo.MusicVideoFragment"
         android:label="Music and Video"
         tools:layout="@layout/music_video_fragment"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.myselfapp.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/profile_fragment"/>
+
 </navigation>

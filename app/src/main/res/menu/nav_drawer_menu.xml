@@ -18,4 +18,8 @@
         android:id="@+id/musicVideoFragment"
         android:title="@string/music_and_video" />
 
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/profile" />
+
 </menu>
