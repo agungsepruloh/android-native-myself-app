@@ -1,5 +1,6 @@
 package com.example.myselfapp.screens.welcome
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
+import com.example.myselfapp.MainActivity
 import com.example.myselfapp.R
 import com.example.myselfapp.databinding.WelcomeFragmentBinding
 import com.example.myselfapp.screens.walkthrough.WalkThroughAdapter
@@ -37,8 +38,9 @@ class WelcomeFragment : Fragment() {
 
         viewModel.eventDoneWalkThrough.observe(viewLifecycleOwner, { isDone ->
             if (isDone) {
-                findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToHomeFragment())
-                viewModel.onDoneWalkThroughComplete()
+                val intent = Intent(activity, MainActivity::class.java)
+                startActivity(intent)
+                activity?.finish()
             }
         })
 
