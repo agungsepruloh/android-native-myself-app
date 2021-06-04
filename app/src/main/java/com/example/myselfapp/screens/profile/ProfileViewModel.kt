@@ -1,4 +1,4 @@
-package com.example.myselfapp
+package com.example.myselfapp.screens.profile
 
 import androidx.lifecycle.ViewModel
 

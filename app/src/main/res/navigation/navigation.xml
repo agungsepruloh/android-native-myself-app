@@ -41,7 +41,7 @@
 
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.myselfapp.ProfileFragment"
+        android:name="com.example.myselfapp.screens.profile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/profile_fragment"/>
 
