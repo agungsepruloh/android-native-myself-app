@@ -8,6 +8,24 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.myselfapp.databinding.ActivityMainBinding
 
+/**
+ *
+ * =========================================================================================
+ * This project was created to fulfill the Midterm Exam of Mobile Computing Application course.
+ *
+ *                              Universitas Komputer Indonesia
+ * =========================================================================================
+ *
+ * Author's Information
+ * ==========================
+ * NIM      : 10118902
+ * Name     : Agung Sepruloh
+ * Class    : IF-11
+ * Informatics Engineering
+ * ==========================
+ * Created on  04 Jun 2021
+ *
+ */
 class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
 

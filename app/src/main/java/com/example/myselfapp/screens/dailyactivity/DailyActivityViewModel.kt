@@ -15,6 +15,7 @@ class DailyActivityViewModel : ViewModel() {
             DailyActivity(name = "Learning", image = "learning"),
             DailyActivity(name = "Coding", image = "coding"),
             DailyActivity(name = "Sleeping", image = "sleeping"),
+            DailyActivity(name = "Repeat", image = "repeat"),
         )
     }
 }

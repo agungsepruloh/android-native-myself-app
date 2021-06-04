@@ -10,14 +10,12 @@
             type="com.example.myselfapp.data.Gallery" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="170dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="320dp"
-        android:paddingStart="@dimen/space_small"
-        android:paddingLeft="@dimen/space_small"
+        android:paddingHorizontal="@dimen/space_small"
         android:paddingTop="@dimen/space_normal"
-        android:paddingEnd="@dimen/space_small"
-        android:paddingRight="@dimen/space_small">
+        android:gravity="center">
 
         <ImageView
             android:id="@+id/image"
@@ -25,11 +23,9 @@
             android:layout_height="match_parent"
             android:contentDescription="@string/gallery"
             android:scaleType="centerCrop"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/gallery3"
             app:galleryImage="@{gallery}"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </layout>
