@@ -21,4 +21,43 @@
     <string name="artist">Artist</string>
     <string name="header_text">Header</string>
     <string name="profile">Profile</string>
+    <string name="greeting">👋 Hi, I’m @agungsepruloh \n👀 I’m interested in Data-Science \n🌱 I’m a student of Informatics</string>
+
+    <string name="image_desc">Profile Image</string>
+    <string name="title_name">Name</string>
+    <string name="title_identity_number">NIM</string>
+    <string name="title_student_class">Class</string>
+    <string name="title_sex">Sex</string>
+    <string name="title_date_of_birth">Date of Birth</string>
+    <string name="title_address">Address</string>
+    <string name="title_blood_group">Blood Group</string>
+    <string name="title_favorite_food">Favorite Food</string>
+    <string name="title_favorite_drink">Favorite Drink</string>
+    <string name="title_hobby">Hobby</string>
+    <string name="title_favorite_song">Favorite Song</string>
+    <string name="title_favorite_film">Favorite Film</string>
+    <string name="title_dream_job">Dream Job</string>
+
+    <string name="val_name">Agung Sepruloh</string>
+    <string name="val_identity_number">10118902</string>
+    <string name="val_student_class">IF-11</string>
+    <string name="val_sex">Male</string>
+    <string name="val_date_of_birth">1996–09–27</string>
+    <string name="val_address">27 Kolonel Masturi Street</string>
+    <string name="val_blood_group">A</string>
+    <string name="val_favorite_food">Chocolate</string>
+    <string name="val_favorite_drink">Plain Water</string>
+    <string name="val_hobby">Laying Down</string>
+    <string name="val_favorite_song">Bad Guy by Billie Eilish</string>
+    <string name="val_favorite_film">Killing Eve</string>
+    <string name="val_dream_job">Data Scientist</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="instagram">Instagram</string>
+    <string name="find_me">Find Me</string>
+    <string name="contact_me">Contact Me</string>
+    <string name="about_me">I am an undergraduate student in Informatics Engineering at the Indonesian Computer University. My interest in the world of programming is very high. I can work in a team or individually with good communication skills.</string>
+    <string name="walkthrough_one_desc">This application is used to briefly tell \n about the profile of Agung Sepuloh</string>
+    <string name="walkthrough_three_desc">Your data will be stored securely and will not be stored anywhere outside this device</string>
+    <string name="walkthrough_two_desc">About his habits and also his ideals \n will be told in this application</string>
 </resources>

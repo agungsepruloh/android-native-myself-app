@@ -4,22 +4,27 @@
 
     <item
         android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
         android:title="@string/home" />
 
     <item
         android:id="@+id/dailyActivityFragment"
+        android:icon="@drawable/activity"
         android:title="@string/daily_activity" />
 
     <item
         android:id="@+id/galleryFragment"
+        android:icon="@drawable/gallery"
         android:title="@string/gallery" />
 
     <item
         android:id="@+id/musicVideoFragment"
+        android:icon="@drawable/music"
         android:title="@string/music_and_video" />
 
     <item
         android:id="@+id/profileFragment"
+        android:icon="@drawable/profile"
         android:title="@string/profile" />
 
 </menu>

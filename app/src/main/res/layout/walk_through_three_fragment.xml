@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="@dimen/space_small"
             android:gravity="center_horizontal"
-            android:text="@string/lorem_ipsum_2"
+            android:text="@string/walkthrough_three_desc"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
 
     </LinearLayout>
