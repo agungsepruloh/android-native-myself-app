@@ -1,8 +1,9 @@
 package com.example.myselfapp.data
 
-data class Music(
+import java.util.*
+
+data class Video(
     val id: Long,
-    val artist: String,
     val title: String,
-    val image: String,
+    val path: String,
 )
